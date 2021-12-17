@@ -33,9 +33,7 @@ namespace KafkaProducer
                 {
                     //After the creating the message it is the time to send the message to respective topic "SauravTest"
                     var dr = await p.ProduceAsync("SauravTest", message);
-
                     Console.WriteLine($"Produced message '{dr.Value}' to topic {dr.Topic}, partition {dr.Partition}, offset {dr.Offset}");
-
                     //Make this thread sleep for 5000 milli seconds
                     Thread.Sleep(5000);
                 }
@@ -45,13 +43,7 @@ namespace KafkaProducer
                     Console.WriteLine("The erros created is:", ex.Message);
                 }
 
-
-
             }
         }
-
-
-
-
     }
 }
