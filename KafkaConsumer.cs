@@ -46,7 +46,6 @@ namespace KafkaConsumer
                     Console.WriteLine("Error Message:", e.Message);
                 }
 
-
             }
         }
     }
